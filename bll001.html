@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causadores do bullyn</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <title>bullyn formadores das causas.</title>
+    <style>
+        body{
+            height: 95vh;
+            background-image: url('https://i0.wp.com/jornal.usp.br/wp-content/uploads/20171024_00_bullying_escola_jovem-3.jpg?resize=800%2C420');
+           background-size: cover;
+           background-attachment: fixed;
+        }
+        article{
+            background-color: white;
+            padding: 10px;
+            max-width: 700px;
+            margin: auto;
+           
+        }
+        div#quadrado{
+            /*principla conteudo ordernado*/
+
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            
+
+            /*criando separamento e transformando em bloco*/
+            display: inline-block; 
+
+        } 
+        div.q1{
+            background-image: url('https://www.mackenzie.br/fileadmin/user_upload/if_square-facebook_317727.png');
+            background-size: 100% 100%;
+            border-radius: 15px;
+        }
+        div.q1:hover{
+            background-image: url('https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM');
+            background-size: 100% 100%;
+        }
+        div.q2{
+            background-image: linear-gradient(to bottom,green,black);
+        }
+        div.q3:hover{
+            background-color: red;
+        }
+        div.q3{
+            background-color: black;
+        }
+        div.q2:hover{
+            background-image: linear-gradient(to bottom,yellow,black);
+        }
+    </style>
 </head>
 <body>
-    
+    <section>   
+        <article>
+            <h2>O  Bullyng</h2>
+            <p>O bulling foi e e uns dos motivos de que nao tenha forças para nao yYNsrC0gNe9Dq8xqFOEznG2brQSn978m5BEKZ47guir o que voce quer aulguns dos
+                e aforma de coo trata asd pessoas a sua volta na maioria as pessoas que pratican o bullyng precisando prorcura auylguen para colocar a culpar de nao esta sendo ameaçado e nao pasaaqr a sr a vitima a poartir daquele momento.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolor incidunt, minima at, aut veritatis ducimus nisi et praesentium tempora nostrum? Similique autem iste harum nobis quas nisi doloribus necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quidem quia eaque dicta saepe tempore laborum dolorem autem fugiat velit veritatis cum ad animi dignissimos optio consequuntur, ab delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis facilis eaque laudantium. Minima perspiciatis atque, architecto quibusdam laborum provident sit veniam unde. Optio eum a voluptatibus iure voluptate vero?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex doloremque, dicta repellendus at earum quo soluta iure! Sint asperiores fuga ipsam ad cupiditate in, neque earum eaque maiores cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus voluptates modi ea porro quae eaque officiis! Quibusdam ducimus, aliquid asperiores mollitia sed accusamus esse provident harum, porro hic nobis!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero, iusto non reprehenderit, unde totam velit fugiat voluptatibus expedita enim mollitia sequi officiis, quo quod ut facilis amet ullam a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo nobis. Quod atque labore, quaerat tempora in provident est id magni dignissimos obcaecati. Eius dolorem rerum corrupti maiores tempora voluptates!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi a quos, pariatur architecto consectetur temporibus minus eaque dolorem earum non, quibusdam ullam quisquam. Ab alias ad corporis deserunt dolorem!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab perferendis obcaecati provident quae! Possimus totam quaerat ea corporis ex vel tempora. Architecto voluptate magni, ipsam unde dolorum provident aliquam.
+O bulling foi e e uns dos motivos de que nao tenha forças para nao yYNsrC0gNe9Dq8xqFOEznG2brQSn978m5BEKZ47guir o que voce quer aulguns dos
+                e aforma de coo trata asd pessoas a sua volta na maioria as pessoas que pratican o bullyng precisando prorcura auylguen para colocar a culpar de nao esta sendo ameaçado e nao pasaaqr a sr a vitima a poartir daquele momento.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolor incidunt, minima at, aut veritatis ducimus nisi et praesentium tempora nostrum? Similique autem iste harum nobis quas nisi doloribus necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quidem quia eaque dicta saepe tempore laborum dolorem autem fugiat velit veritatis cum ad animi dignissimos optio consequuntur, ab delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis facilis eaque laudantium. Minima perspiciatis atque, architecto quibusdam laborum provident sit veniam unde. Optio eum a voluptatibus iure voluptate vero?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex doloremque, dicta repellendus at earum quo soluta iure! Sint asperiores fuga ipsam ad cupiditate in, neque earum eaque maiores cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus voluptates modi ea porro quae eaque officiis! Quibusdam ducimus, aliquid asperiores mollitia sed accusamus esse provident harum, porro hic nobis!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero, iusto non reprehenderit, unde totam velit fugiat voluptatibus expedita enim mollitia sequi officiis, quo quod ut facilis amet ullam a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo nobis. Quod atque labore, quaerat tempora in provident est id magni dignissimos obcaecati. Eius dolorem rerum corrupti maiores tempora voluptates!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi a quos, pariatur architecto consectetur temporibus minus eaque dolorem earum non, quibusdam ullam quisquam. Ab alias ad corporis deserunt dolorem!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab perferendis obcaecati provident quae! Possimus totam quaerat ea corporis ex vel tempora. Architecto voluptate magni, ipsam unde dolorum provident aliquam.
+O bulling foi e e uns dos motivos de que nao tenha forças para nao yYNsrC0gNe9Dq8xqFOEznG2brQSn978m5BEKZ47guir o que voce quer aulguns dos
+                e aforma de coo trata asd pessoas a sua volta na maioria as pessoas que pratican o bullyng precisando prorcura auylguen para colocar a culpar de nao esta sendo ameaçado e nao pasaaqr a sr a vitima a poartir daquele momento.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolor incidunt, minima at, aut veritatis ducimus nisi et praesentium tempora nostrum? Similique autem iste harum nobis quas nisi doloribus necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quidem quia eaque dicta saepe tempore laborum dolorem autem fugiat velit veritatis cum ad animi dignissimos optio consequuntur, ab delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis facilis eaque laudantium. Minima perspiciatis atque, architecto quibusdam laborum provident sit veniam unde. Optio eum a voluptatibus iure voluptate vero?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex doloremque, dicta repellendus at earum quo soluta iure! Sint asperiores fuga ipsam ad cupiditate in, neque earum eaque maiores cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus voluptates modi ea porro quae eaque officiis! Quibusdam ducimus, aliquid asperiores mollitia sed accusamus esse provident harum, porro hic nobis!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero, iusto non reprehenderit, unde totam velit fugiat voluptatibus expedita enim mollitia sequi officiis, quo quod ut facilis amet ullam a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo nobis. Quod atque labore, quaerat tempora in provident est id magni dignissimos obcaecati. Eius dolorem rerum corrupti maiores tempora voluptates!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi a quos, pariatur architecto consectetur temporibus minus eaque dolorem earum non, quibusdam ullam quisquam. Ab alias ad corporis deserunt dolorem!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab perferendis obcaecati provident quae! Possimus totam quaerat ea corporis ex vel tempora. Architecto voluptate magni, ipsam unde dolorum provident aliquam.
+O bulling foi e e uns dos motivos de que nao tenha forças para nao yYNsrC0gNe9Dq8xqFOEznG2brQSn978m5BEKZ47guir o que voce quer aulguns dos
+                e aforma de coo trata asd pessoas a sua volta na maioria as pessoas que pratican o bullyng precisando prorcura auylguen para colocar a culpar de nao esta sendo ameaçado e nao pasaaqr a sr a vitima a poartir daquele momento.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolor incidunt, minima at, aut veritatis ducimus nisi et praesentium tempora nostrum? Similique autem iste harum nobis quas nisi doloribus necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quidem quia eaque dicta saepe tempore laborum dolorem autem fugiat velit veritatis cum ad animi dignissimos optio consequuntur, ab delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis facilis eaque laudantium. Minima perspiciatis atque, architecto quibusdam laborum provident sit veniam unde. Optio eum a voluptatibus iure voluptate vero?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex doloremque, dicta repellendus at earum quo soluta iure! Sint asperiores fuga ipsam ad cupiditate in, neque earum eaque maiores cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus voluptates modi ea porro quae eaque officiis! Quibusdam ducimus, aliquid asperiores mollitia sed accusamus esse provident harum, porro hic nobis!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero, iusto non reprehenderit, unde totam velit fugiat voluptatibus expedita enim mollitia sequi officiis, quo quod ut facilis amet ullam a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo nobis. Quod atque labore, quaerat tempora in provident est id magni dignissimos obcaecati. Eius dolorem rerum corrupti maiores tempora voluptates!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sequi a quos, pariatur architecto consectetur temporibus minus eaque dolorem earum non, quibusdam ullam quisquam. Ab alias ad corporis deserunt dolorem!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab perferendis obcaecati provident quae! Possimus totam quaerat ea corporis ex vel tempora. Architecto voluptate magni, ipsam unde dolorum provident aliquam.
+</p>
+                
+        </article>     
+            <div id="quadrado" class="q1">
+
+            </div>
+            <div id="quadrado" class="q2">
+
+            </div>
+            <div id="quadrado" class="q3">
+
+            </div>        
+    <section>
+
 </body>
 </html>
